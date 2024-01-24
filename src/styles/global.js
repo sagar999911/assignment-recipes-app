@@ -24,11 +24,10 @@ export const GlobalStyles = createGlobalStyle`
     #root {
         width: 100%;
     }
-    
+
     body {
-        background-color: ${(props) => props.theme.white};
-        background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.png");
-        color: ${(props) => props.theme.gray};
+        background-color: #000000;
+        color: ${(props) => props.theme.white};
     }
 
     a {

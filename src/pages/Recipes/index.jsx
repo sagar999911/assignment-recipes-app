@@ -41,7 +41,7 @@ export function Recipes() {
 
   useEffect(() => {
     getRecipes();
-  }, [currentPage]);
+  }, [currentPage, debouncedSearch]);
 
   function onPageChange(page) {
     setCurrentPage(page);
@@ -51,13 +51,9 @@ export function Recipes() {
     });
   }
 
-  useEffect(() => {
-    getRecipes();
-  }, [debouncedSearch]);
-
   return (
     <RecipesContainer>
-      <PageHeader title="Recipes" subtitle="Easy recipes to cook at home" />
+      <PageHeader title="Food Recipes" subtitle="Sagar food house" />
       <SearchInput
         onChange={onChangeSearch}
         value={search}

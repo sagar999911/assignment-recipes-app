@@ -6,7 +6,7 @@ export const RecipeContainer = styled(BasePageContainer)`
   margin-bottom: 60px;
 
   h3 {
-    color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.green};
     font-size: 30px;
     margin-top: 60px;
     margin-bottom: 30px;
@@ -44,7 +44,7 @@ export const RecipeOverviewContainer = styled.section`
   }
 
   strong {
-    color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.green};
   }
 
   @media (max-width: 750px) {
